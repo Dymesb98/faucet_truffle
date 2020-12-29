@@ -12,7 +12,7 @@ contract Faucet {
             "Faucet.sol: Insufficient Funds."
         );
         require(
-            _amount <= 0.1 ether,
+            _amount <= 10 ether,
             "Faucet.sol: Cannot withdraw more than 0.1."
         );
         msg.sender.transfer(_amount);
